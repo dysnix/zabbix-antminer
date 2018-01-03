@@ -13,7 +13,7 @@ def get_value(host, port, username, password, item):
                                 auth=HTTPDigestAuth(username, password))
         data = response.json()
     except Exception as p:
-        raise BaseException('Error connect to Antiminer: %s' % str(p))
+        raise BaseException('Error connect to AntMiner: %s' % str(p))
 
     if len(keys) == 2:
         return data[keys[0]][keys[1]]
