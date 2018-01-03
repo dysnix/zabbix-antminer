@@ -1,12 +1,12 @@
-# zabbix-antiminer
+# zabbix-antminer
 
-An external script and template for getting Antiminer metrics into Zabbix
+An external script and template for getting AntMiner metrics into Zabbix
 
 ![Zabbix screen](screenshots/zabbix.png?raw=true "Zabbix screen")
 
 # How it works
 
-* Get Antiminer metrics from `/cgi-bin/get_miner_status.cgi` output by HTTP
+* Get AntMiner metrics from `/cgi-bin/get_miner_status.cgi` output by HTTP
 * Parse data from JSON output
 * Store data into Zabbix
 
@@ -24,12 +24,12 @@ An external script and template for getting Antiminer metrics into Zabbix
 * Zabbix 3.0
 
 # Install
-* Download antiminer-zbx-chk and zbx_template.xml
-* Put antiminer-zbx-chk into ExternalScript location (You will find it in zabbix_server configuration)
-* Make antiminer-zbx-chk executable (`chmod +x check_dnsbl.sh`)
+* Download antminer-zbx-chk and zbx_template.xml
+* Put antminer-zbx-chk into ExternalScript location (You will find it in zabbix_server configuration)
+* Make antminer-zbx-chk executable (`chmod +x check_dnsbl.sh`)
 * Import zabbix_template (zbx_template.xml) into zabbix
-* Add Antiminer as Zabbix Host. Input Antiminer HTTP Host or IP as Zabbix Agent Host
-* Add Zabbix Macros `{$HOST.PORT}` with Antiminer HTTP port value
-* Add Zabbix Macros `{$HTTP.USERNAME}` with Antiminer HTTP Username
-* Add Zabbix Macros `{$HTTP.PASSWORD}` with Antiminer HTTP Password
+* Add AntMiner as Zabbix Host. Input AntMiner HTTP Host or IP as Zabbix Agent Host
+* Add Zabbix Macros `{$HOST.PORT}` with AntMiner HTTP port value
+* Add Zabbix Macros `{$HTTP.USERNAME}` with AntMiner HTTP Username
+* Add Zabbix Macros `{$HTTP.PASSWORD}` with AntMiner HTTP Password
 * Link template to You servers
