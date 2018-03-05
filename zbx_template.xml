@@ -29,7 +29,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.fan3&quot;]</key>
+                    <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.fan3&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -72,7 +72,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.fan6&quot;]</key>
+                    <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.fan6&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -115,7 +115,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_6&quot;]</key>
+                    <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_6&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -158,7 +158,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_7&quot;]</key>
+                    <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_7&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -201,7 +201,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_8&quot;]</key>
+                    <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_8&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -244,7 +244,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;summary.ghs5s&quot;]</key>
+                    <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;summary.ghs5s&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -364,7 +364,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{AntMiner:antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_6&quot;].last()}&gt;80 or {AntMiner:antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_7&quot;].last()}&gt;80 or {AntMiner:antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_8&quot;].last()}&gt;80</expression>
+            <expression>{AntMiner:antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_6&quot;].last()}&gt;80 or {AntMiner:antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_7&quot;].last()}&gt;80 or {AntMiner:antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_8&quot;].last()}&gt;80</expression>
             <name>High temp on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -374,7 +374,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{AntMiner:antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;summary.ghs5s&quot;].last()}&lt;13</expression>
+            <expression>{AntMiner:antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;summary.ghs5s&quot;].last()}&lt;13</expression>
             <name>Low hashrate on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -412,7 +412,7 @@
                     <type>0</type>
                     <item>
                         <host>AntMiner</host>
-                        <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.fan3&quot;]</key>
+                        <key>antimner-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.fan3&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -424,7 +424,7 @@
                     <type>0</type>
                     <item>
                         <host>AntMiner</host>
-                        <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.fan6&quot;]</key>
+                        <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.fan6&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -456,7 +456,7 @@
                     <type>0</type>
                     <item>
                         <host>AntMiner</host>
-                        <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;summary.ghs5s&quot;]</key>
+                        <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;summary.ghs5s&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -488,7 +488,7 @@
                     <type>0</type>
                     <item>
                         <host>AntMiner</host>
-                        <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_6&quot;]</key>
+                        <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_6&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -500,7 +500,7 @@
                     <type>0</type>
                     <item>
                         <host>AntMiner</host>
-                        <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_7&quot;]</key>
+                        <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_7&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -512,7 +512,7 @@
                     <type>0</type>
                     <item>
                         <host>AntMiner</host>
-                        <key>antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_8&quot;]</key>
+                        <key>antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_8&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
