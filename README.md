@@ -26,7 +26,7 @@ An external script and template for getting AntMiner metrics into Zabbix
 # Install
 * Download antminer-zbx-chk and zbx_template.xml
 * Put antminer-zbx-chk into ExternalScript location (You will find it in zabbix_server configuration)
-* Make antminer-zbx-chk executable (`chmod +x check_dnsbl.sh`)
+* Make antminer-zbx-chk executable (`chmod 755 antminer-zbx-chk`)
 * Import zabbix_template (zbx_template.xml) into zabbix
 * Add AntMiner as Zabbix Host. Input AntMiner HTTP Host or IP as Zabbix Agent Host
 * Add Zabbix Macros `{$HOST.PORT}` with AntMiner HTTP port value
