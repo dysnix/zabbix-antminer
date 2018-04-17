@@ -364,7 +364,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{AntMiner:antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_6&quot;].last()}&gt;80 or {AntMiner:antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_7&quot;].last()}&gt;80 or {AntMiner:antiminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_8&quot;].last()}&gt;80</expression>
+            <expression>{AntMiner:antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_6&quot;].last()}&gt;80 or {AntMiner:antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_7&quot;].last()}&gt;80 or {AntMiner:antminer-zbx-chk[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;, &quot;{$HTTP.USERNAME}&quot;, &quot;{$HTTP.PASSWORD}&quot;, &quot;devs.0.freq.temp2_8&quot;].last()}&gt;80</expression>
             <name>High temp on {HOST.NAME}</name>
             <url/>
             <status>0</status>
